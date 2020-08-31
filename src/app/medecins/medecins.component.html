@@ -1,0 +1,65 @@
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg navStyle">
+  <a class="textnav navbar-brand " >Esante</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+          <a class="nav-item nav-link active" routerLink=''>Home </a>
+          <a class="nav-item nav-link active" routerLink='/loginMedecin'>deconnection</a>
+
+      </div>
+  </div>
+</nav>
+
+<body align='center'>
+  <div class="tableStyle">
+      <table class="tableStyle" cellpadding="50px" style="border-spacing: 130px;">
+          <tr>
+              <td>
+                  <h4>Date: {{CurrentDate | date}}</h4>
+              </td>
+              <td>
+                  <h1 class=" textcolor">Fonctionnaire</h1>
+              </td>
+              <td>
+                  <h4>{{CurrentTime | date:'longTime'}}</h4>
+              </td>
+          </tr>
+
+      </table>
+  </div>
+
+  <div align='center'>
+      <form class="col-sm-6 InfoPersonnel ">
+          <table>
+              <tr>
+                  <td>
+                      <h4 align='center'>Id : </h4>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h4>Nom Admin :</h4>
+                  </td>
+                  <td>
+                      <h4>Prenom Admin :</h4>
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                      <h4> telephone :</h4>
+                  </td>
+                  <td>
+                      <h4>Email :</h4>
+                  </td>
+              </tr>
+
+          </table>
+      </form>
+
+  </div>
+
+</body>

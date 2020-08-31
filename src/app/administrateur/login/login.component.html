@@ -1,0 +1,50 @@
+<body align='center'>
+  <nav class="navbar navbar-light bg-light navbar-expand-lg navStyle">
+    <a class="navbar-brand" href="#">Esante</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="loginAdmin"> Admin <span class="sr-only">(current)</span></a>
+
+        <a class="nav-item nav-link active" href="loginMedecin"> PersonelSante <span
+            class="sr-only">(current)</span></a>
+
+        <a class="nav-item nav-link active" href="loginMalade"> Malade <span class="sr-only">(current)</span></a>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+
+  <div align='center' border-color='RED' border='bold'>
+    <h3 class=" text-danger "> Admin </h3>
+
+    <form class="col-sm-4 Mystyle" #loginForm="ngForm" (ngSubmit)="testLogin(loginForm.value)">
+      <div class="form-group">
+        <label>Email address</label>
+        <input required #email="ngModel" type="email" name="email" class="form-control stt"
+          id="exampleDropdownFormEmail2" placeholder="email@example.com" ngModel>
+
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input required type="name" name="password" class="form-control stt" id="exampleDropdownFormPassword2"
+          placeholder="Password" ngModel>
+      </div>
+
+
+      <button #sinIn type="submit" class="btn btn-primary"> Connexion </button>
+
+
+    </form>
+
+  </div>
+
+
+
+
+</body>

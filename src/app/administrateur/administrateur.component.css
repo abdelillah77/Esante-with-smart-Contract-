@@ -1,0 +1,105 @@
+.Mystyle{
+        
+    
+    border-radius: 4px;
+    height: 215px;
+   
+    padding-top: 140px;
+    padding-left: 70px;
+    border-spacing: 10px; 
+}
+
+input.ng-invalid{
+    border-left:5px solid red
+}
+
+input.ng-valid{
+    border-left:5px solid blue
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr
+  }
+
+  .InfoAdmin{
+        
+    border: 1px solid black;
+    border-radius: 4px;
+    height: auto;
+    width: auto;
+ 
+       
+}
+
+.styleHeader{
+    padding-bottom: 340px;
+
+}
+  .RoleStyle{
+        
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 600px;
+    height: 400px;
+       
+}
+
+.AjouterRole{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 350px;
+    height: 400px;
+
+
+}
+
+.inline-flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+      gap: 10px;
+      margin-left:auto; 
+      margin-right:auto;
+    margin-bottom: 50px;
+    align-content:center;
+    padding-top: 50px;
+  }
+
+
+  
+.tableStyle {
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 100;
+   
+  }
+  .styleHeader{
+    bottom:  200px;
+
+  }
+.stylefooter{
+   
+    position: inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #009bff;
+    text-align: center;
+}
+.navStyle{
+    background-color: #009bff;
+}
+.textcolor{
+    color: #fb3f3f;
+    
+}
+.paragraphe{
+    background-color: #f0efef;
+
+    border: 1px solid black;
+
+}
+
+.textfooter{
+    color:white;
+}

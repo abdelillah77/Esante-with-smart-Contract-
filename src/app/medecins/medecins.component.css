@@ -1,0 +1,73 @@
+input.ng-invalid{
+    border-left:5px solid red
+}
+
+input.ng-valid{
+    border-left:5px solid blue
+}
+
+.InfoMedecin{
+        
+    border: 1px solid black;
+    border-radius: 4px;
+    height: auto;
+    width: auto;
+ 
+       
+}
+
+.textnav{
+    color:white;
+}
+.InfoPersonnel{
+        
+    border: 1px solid black;
+    border-radius: 4px;
+    height: auto;
+    width: auto;
+ 
+       
+}
+
+.Mystyle{
+        
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 280px;
+        background-color: #f0efef;
+        padding-top: 40px;
+        
+}
+.stylefooter{
+   
+    position: relative;
+    top: 155px;
+    bottom: 0px;
+   
+   
+    background-color: #009bff;
+  
+}
+.navStyle{
+    background-color: #009bff;
+}
+.text{
+    color: white;
+}
+.stt{
+    
+    border: 2px solid #555;
+
+}
+
+.tableStyle {
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 100;
+   
+  }
+
+  .textcolor{
+    color: #fb3f3f;
+    
+}

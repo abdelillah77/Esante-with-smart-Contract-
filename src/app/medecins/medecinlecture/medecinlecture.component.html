@@ -1,0 +1,111 @@
+<nav class="navbar navbar-light bg-light navbar-expand-lg navStyle">
+  <a class="textfooter navbar-brand ">Esante</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink=''>Home </a>
+      <a class="nav-item nav-link active" href="#">Déconnexion </a>
+    </div>
+  </div>
+</nav>
+
+
+<body align='center'>
+  <div class="tableStyle">
+    <table class="tableStyle" cellpadding="50px" style="border-spacing: 130px;">
+      <tr>
+        <td>
+          <h4>Date: {{CurrentDate | date}}</h4>
+        </td>
+        <td>
+          <h1 class=" textcolor"> Personel Sante </h1>
+        </td>
+        <td>
+          <h4>{{CurrentTime | date:'longTime'}}</h4>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div align='center'>
+    <form class="col-sm-6 InfoAdmin ">
+      <table>
+
+        <tr>
+          <td>
+            <h4>Nom : {{ PPNom }}</h4>
+          </td>
+          <td>
+            <h4>Prenom : {{ PPPrenom }}</h4>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <h4>Tel :{{ PPtel }}</h4>
+          </td>
+          <td>
+            <h4>Email : {{ PPemail }}</h4>
+          </td>
+        </tr>
+
+      </table>
+    </form>
+
+  </div>
+
+  <div class='parent inline-flex-parent col-sm-11' align='center'>
+
+    <div class='child ' align='center'>
+      <form class="ListMaladeStyle">
+        <h3>Liste Malades</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Identifiant</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Prenom</th>
+              <th scope="col">Telephone</th>
+              <th scope="col">Mail</th>
+              <th scope="col">Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of listview">
+              <th scope="row">{{item.Id}}</th>
+              <td>{{item.Nom}}</td>
+              <td>{{item.Preom}}</td>
+              <td>{{item.Tel}}</td>
+              <td>{{item.Email}}</td>
+              <td>{{item.address}}</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+
+
+
+
+  </div>
+</body>
+
+
+
+
+
+
+<footer class="page-footer font-small blue stylefooter ">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a class="textfooter" href="https://mdbootstrap.com/"> Université Abou baker belkaid</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
